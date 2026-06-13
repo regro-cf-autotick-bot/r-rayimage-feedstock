@@ -1,4 +1,4 @@
-{% set version = "0.15.1" %}
+{% set version = "0.26.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rayimage_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rayimage/rayimage_{{ version }}.tar.gz
-  sha256: 95a00ddd0e8da1245fd1d52aa6e5d3a3d4b8eacf6310bb2be51c5ccf9de3ad08
+  sha256: 0373dfd8e3b1b11b10a072b6b6947711b211940a7917d25f664cf47c7b5a1bb1
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -59,8 +59,8 @@ about:
   home: https://www.rayimage.dev
   dev_url: https://github.com/tylermorganwall/rayimage
   license: GPL-3.0-only
-  summary: Uses convolution-based techniques to generate simulated camera bokeh, depth of field, and other camera effects, using an image and an optional depth map. Accepts both filename inputs and in-memory array representations of images and matrices. Includes functions to perform 2D convolutions, reorient and resize images/matrices,
-    add image overlays, generate camera vignette effects, and add titles to images.
+  summary: Uses convolution-based techniques to generate simulated camera bokeh, depth of field, and other camera effects, using an image and an optional depth map. Accepts both filename inputs and in-memory array representations of images and matrices. Includes functions to perform 2D convolutions, reorient and resize
+    images/matrices, add image overlays, generate camera vignette effects, and add titles to images.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
